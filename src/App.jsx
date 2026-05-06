@@ -1,8 +1,8 @@
 // src/App.jsx
 import React from 'react';
 import './App.css';
-import AnimatedBackground from './components/AnimatedBackground';
-import ComingSoonCard from './components/ComingSoonCard';
+import AnimatedBackground from './Components/AnimatedBackground';
+import ComingSoonCard from './Components/ComingSoonCard';
 
 function App() {
   return (
