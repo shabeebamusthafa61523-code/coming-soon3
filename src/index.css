@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-lime-brand: #b4d333;
+}
+
+@keyframes gradient-move {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient-move {
+  animation: gradient-move 3s ease infinite;
+}
+
+body {
+  background: #050505;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism Grain Overlay (Premium Touch) */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url('https://grainy-gradients.vercel.app/noise.svg');
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 50;
+}
